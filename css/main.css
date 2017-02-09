@@ -60,32 +60,37 @@ img {
 /* Typography */
 body {
   font-family: 'Roboto', sans-serif; /* Make sure you have added this font in the head of your HTML! */
-  color: rgb(60,60,65);
+  /*color: rgb(60,60,65);*/
+  color: black;
+  font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.1rem;
+  font-weight: 300;
 }
+
 p {
   margin-bottom: 1rem;
 }
 
 h1 { font-size: 3.0rem; line-height: 1.2; }
-h2 { font-size: 2.4rem; line-height: 1.25; }
-h3 { font-size: 2.0rem; line-height: 1.3; }
-h4 { font-size: 1.8rem; line-height: 1.35; }
-h5 { font-size: 1.7rem; line-height: 1.5; }
-h6 { font-size: 1.5rem; line-height: 1.5; }
-p  { font-size: 1.1rem; line-height: 1.5;}
-blockquote  { font-size: 1.1rem; line-height: 1.5;}
-li  { font-size: 1.1rem; }
+h2 { font-size: 2.0rem; line-height: 1.25; }
+h3 { font-size: 1.5rem; line-height: 1.3; }
+h4 { font-size: 1.2rem; line-height: 1.35; }
+h5 { font-size: 1.0rem; line-height: 1.5; }
+h6 { font-size: 1.0rem; line-height: 1.5; }
+p  { font-size: 1.0rem; line-height: 1.5;}
+blockquote  { font-size: 1.0rem; line-height: 1.5;}
+li  { font-size: 1.0rem; }
 
 
 /* Padding & Margin */
 
-header, footer  { padding: 2vh 5%; }
+/*header, footer  { padding: 2vh 5%; }*/
 
-section         { padding: 10vh 5%; }
+section         { padding: 5vh 5%; }
+/* changed vh from 10 on initial site template to 5 */
 
 .col,
 [class*=col-]   { padding: 2%; }
@@ -121,13 +126,14 @@ nav a {
     color: inherit;
 }
 nav a:hover {
-  color: #ff9100; /* featured color */
+  color: white;
+  background-color: #ff9100; /* featured color */
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 .logo {
-  max-height: 2.5rem;
-  max-width: 15rem;
+  max-height: 3rem;
+  max-width: 20rem;
   margin: 0.5em 0;
 }
 header {
@@ -155,18 +161,12 @@ footer nav .fa,
   padding: 0.5em;
 }
 
-.ribbon {
-  background-color: #00bf30;
-  width: 100vw;
-  color: white;
-}
-
 /* ----- MODULAR ELEMENTS --------------------------- */
 .banner {
   background-color: #ff9100; /* featured-color */
   background-size: cover;
   background-position: center;
-  min-height:80vh;
+  min-height:50vh;
 }
 
 .box-img { /* This can be used for any col or div that you want filled with a background image. */
@@ -255,7 +255,8 @@ blockquote {
   border-left: 2px solid rgb(245,245,245);
   margin-left: 3%;
   padding-left: 3%;
-  font-weight: 600;
+  font-weight: 300;
+  font-style: italic;
   color: rgb(90,90,95);
 }
 /* Lists */
@@ -339,3 +340,65 @@ form [class*=col-] {
   }
 
 }/* End media query */
+
+/* MY CSS CODE STARTS HERE (ERICA) */
+
+/* --- header and footer ribbons --- */
+
+.ribbon {
+  background-color: #ff9100;
+  width: 100vw;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+/* --- additional text class styles --- */
+
+bold {
+  font-weight: 700;
+}
+
+/* --- positioning styles --- */
+
+.relative {
+  position: relative;
+}
+
+.absolute-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* --- image styles --- */
+.small-portrait-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.large-portrait-circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+/* --- course summary stylings --- */
+
+.course-summary {
+  /*margin: 5px;*/
+}
+
+.course-summary {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0 -12px;
+}
+
+/* --- Google map styling --- */
+
+.maps iframe {
+  pointer-events: none;
+}
