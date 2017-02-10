@@ -74,7 +74,7 @@ p {
   margin-bottom: 1rem;
 }
 
-h1 { font-size: 3.0rem; line-height: 1.2; }
+h1 { font-size: 2.5rem; line-height: 1.2; }
 h2 { font-size: 2.0rem; line-height: 1.25; }
 h3 { font-size: 1.5rem; line-height: 1.3; }
 h4 { font-size: 1.2rem; line-height: 1.35; }
@@ -183,8 +183,8 @@ footer nav .fa,
 .button-inverted {
   background-color: #ff9100; /* featured color */
   border: none;
-  border-radius: 5px;
-  padding: 0.5em 3em;
+  border-radius: 0px;
+  padding: 1em 3em;
   margin: 1em auto;
   display: inline-block;
   text-decoration: none;
@@ -192,12 +192,14 @@ footer nav .fa,
   color: white;
 }
 .button-inverted {
-    border: 2px solid white;
+    border: 1px solid white;
     color: white;
 }
 .button:hover,
 .button-inverted:hover {
-  font-weight: semi-bold;
+  background-color: white;
+  color: #ff9100;
+  border: 1px solid #ff9100;
 }
 
 /* Shop Elements */
@@ -348,7 +350,7 @@ form [class*=col-] {
 .ribbon {
   background-color: #ff9100;
   width: 100vw;
-  height: 50px;
+  height: 70px;
   margin: 0;
   padding: 0;
   color: white;
@@ -358,6 +360,28 @@ form [class*=col-] {
 
 bold {
   font-weight: 700;
+}
+
+.course-price {
+  font-weight: 700;
+  text-transform: uppercase;
+  /*text-align: left;*/
+}
+
+.ribbon a {
+  color: white;
+}
+
+footer h4 a {
+  color: black;
+  padding: 0.5em;
+  text-decoration: none;
+}
+
+footer h4 a:hover {
+  color: white;
+  background-color: #ff9100;
+  text-decoration: none;
 }
 
 /* --- positioning styles --- */
@@ -388,17 +412,35 @@ bold {
 /* --- course summary stylings --- */
 
 .course-summary {
-  /*margin: 5px;*/
-}
-
-.course-summary {
   border: 1px solid black;
   padding: 10px;
   margin: 0 -12px;
+}
+
+.course-summary .button-inverted {
+  margin: 0;
+  padding: 1em;
+  width: 100%;
 }
 
 /* --- Google map styling --- */
 
 .maps iframe {
   pointer-events: none;
+}
+
+/* --- Page title header --- */
+
+.page-title-header {
+  width: 100%;
+  height: 15vh;
+  background-color: #ff9100;
+  color: white;
+  text-align: center;
+}
+
+/* --- background colours --- */
+
+.background-grey {
+  background-color: #f5f5f5;
 }
