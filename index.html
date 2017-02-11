@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Scout Digital Training - Google Analytics and SEO courses Adelaide
-meta-description: This is a starter blog + ecommerce template to fastrack your projects.
-featured-image_path: /uploads/pr-photos-6472.jpg
+meta-description:
+featured-image_path:
 ---
 
   <!-- FIRST BANNER SECTION ---->
@@ -11,6 +11,10 @@ featured-image_path: /uploads/pr-photos-6472.jpg
       <h1> Be prepared <br class="mob-hide"> to do your best online… </h1>
     </div>
   </section>
+
+  <!-- <section>
+    {% include homepage-slider.html %}
+  </section> -->
 
 <!-- SECOND COURSE SUMMARY SECTION ---->
   <section class="centered">
@@ -22,26 +26,14 @@ featured-image_path: /uploads/pr-photos-6472.jpg
       </div>
 
       <div class="col-4_sm-12 grid-equalHeight">
-        <div class="course-summary">
-          <img src="/images/advanced-google-analaytics.jpg" />
-          <h3> Taking your Google Analytics further </h3>
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
-          <p> $XXX Half Day Course</p>
-          <a class="button-inverted" href="#register"> Learn More </a> <a class="button-inverted" href="#register"> Join Now </a>
-        </div>
+        {% include course-summary-ga-further.html %}
       </div>
 
       <div class="col-4_sm-12 grid-equalHeight">
-        <div class="course-summary">
-          <img src="/images/introduction-to-seo.jpg" />
-          <h3> Introduction to SEO best practices </h3>
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
-          <p> $XXX Half Day Course</p>
-          <a class="button-inverted" href="#register"> Learn More </a> <a class="button-inverted" href="#register"> Join Now </a>
-        </div>
+        {% include course-summary-seo-intro.html %}
       </div>
     </div> <!-- end of grid -->
-</section>
+  </section>
 
 <!-- THIRD ALL COURSES SECTION ---->
   <section class="featured centered">
@@ -56,30 +48,11 @@ featured-image_path: /uploads/pr-photos-6472.jpg
 <section class="grid no-padding">
 
   <div class="no-padding col-6_sm-12">
-    <h2> Testimonials </h2>
-    <blockquote>
-      <p> Erica provided an in depth consultation to help me improve my SEO. </p>
-      <p> Her knowledge and skills exceeded my expectations. </p>
-      <p> Her friendly and non patronising manner really helped me learn an incredible amount in a short amount of time. </p>
-      <p> Not only that but her advice was so clear and actionable that I started to see results in a few days! </p>
-      <p> I cannot recommend Erica highly enough for SEO and digital strategy and services. </p>
-    </blockquote>
-    <img src="/images/vanessa-jones-testimonial-square.jpg" class="small-portrait-circle">
-    <p> <bold>Vanessa Jones</bold> <br>
-    <i>Copywriter + content writer + social media marketer at <a href="http://www.jonesthewriter.com/" target="_blank">Jones the Writer</a>.</i> </p>
+    {% include testimonial-jones-writer.html %}
   </div>
 
   <div class="no-padding col-6_sm-12 background-grey">
-    <h2> About the trainer </h2>
-    <div class="grid">
-      <div class="col-6_sm-12">
-        <p> Erica has been working in digital for nearly 10 years, and is obsessed with understanding and using data to improve online results. </p>
-        <p> Google has recognised Erica as a Google Analytics and AdWords certified professional, meaning that she has passed multiple exams that assess her product expertise. </p>
-      </div>
-      <div class="col-6_sm-12-middle">
-        <img src="/images/Erica-adelaide-digital-marketer.jpg" alt="Digital Marketer Adelaide - Erica Stacey (nee Nistico)" class="large-portrait-circle">
-      </div>
-    </div>
+    {% include profile-erica.html %}
   </div>
 
 </section>

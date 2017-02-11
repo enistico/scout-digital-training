@@ -30,7 +30,7 @@
 <!-- Links to CSS Stylesheets  -->
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700" rel="stylesheet">
 
     <!-- Font Awesome for Icons -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -43,10 +43,13 @@
 
     <!-- visit http://realfavicongenerator.net to generate favicons for your site and then place them in the /images/favicons folder -->
 
+    <!-- Owl Carousel stylesheet -->
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
 
     <!-- CUSTOM STYLESHEETS - This should always be the last stylesheet in your head -->
     <link rel="stylesheet" href="/css/main.css">
-      <link rel="stylesheet" href="/css/specific.css">
+    <link rel="stylesheet" href="/css/specific.css">
 
 <!-- end stylesheets -->
 
@@ -100,15 +103,17 @@
   <div class="pure-pusher-container">
       <div class="pure-pusher"> <!-- this contains all of the body of the site -->
 
-        <section class="grid-middle ribbon relative">
-  <div class="col-9_sm-8">
-    Be prepared to do your best online…
+        <section class="fixed no-padding">
+  <section class="grid-middle ribbon relative">
+  <div class="col-9_sm-12">
+    Be prepared to do your best online
   </div>
-  <div class="col-3_sm-4">
+  <div class="col-3 mob-hide">
     <a class="button-inverted absolute-right" href="#register"> Join Now </a>
   </div>
 </section>
 
+</section>
 
 <header>
   <section class="grid-middle no-padding">
@@ -127,25 +132,39 @@
 </header>
 
 
-        <section class="no-padding page-title-header">
-  <h1> About Scout Digital Training </h1>
+        <section class="no-padding page-title-header grid-middle">
+  <h1 class="col-12"> About Scout Digital Training </h1>
 </section>
 
-<section>
-  <p> Ad quo animal legimus legendos. Ut eum veniam dicunt virtute, an noster voluptua convenire mei. At sed tollit scaevola, an maiorum repudiare per. Mei epicuri apeirian ne, usu iisque aliquam praesent ad, omnes ullamcorper in pri. Vitae quaeque mea cu. Mei quot laoreet laboramus eu, cu propriae patrioque maiestatis vel. </p>
-  <p> Ut eum veniam dicunt virtute, an noster voluptua convenire mei. At sed tollit scaevola, an maiorum repudiare per. Mei epicuri apeirian ne, usu iisque aliquam praesent ad, omnes ullamcorper in pri. Vitae quaeque mea cu. Mei quot laoreet laboramus eu, cu propriae patrioque maiestatis vel. </p>
-</section>
+<section class="grid">
 
-<section>
-  <h2> About the trainer: Erica Stacey </h2>
-  <!-- could manage this section with includes -->
-  <p> Ut eum veniam dicunt virtute, an noster voluptua convenire mei. At sed tollit scaevola, an maiorum repudiare per. Mei epicuri apeirian ne, usu iisque aliquam praesent ad, omnes ullamcorper in pri. Vitae quaeque mea cu. Mei quot laoreet laboramus eu, cu propriae patrioque maiestatis vel. </p>
-  <img src="/images/scout-digital-training-erica-about.jpg" alt="Digital Marketer Adelaide - Erica Stacey (nee Nistico)">
-</section>
+  <section class="col-8_md-12">
 
-<section>
-  <h2> Testimonial </h2>
-  <!-- could add this as an include -->
+    <section>
+      <h4> Scout Digital Training is a specialist division of <a href="http://www.scoutdigitalmarketing.com.au" target="_blank">Scout Digital Marketing</a>, dedicated to providing practical and effective digital training to small groups. </h4>
+      <p> Ut eum veniam dicunt virtute, an noster voluptua convenire mei. At sed tollit scaevola, an maiorum repudiare per. Mei epicuri apeirian ne, usu iisque aliquam praesent ad, omnes ullamcorper in pri. Vitae quaeque mea cu. Mei quot laoreet laboramus eu, cu propriae patrioque maiestatis vel. </p>
+    </section>
+
+    <section>
+      <h2> About the trainer </h2>
+<div class="grid">
+  <div class="col-6_sm-12 no-padding">
+    <p> The Google Analytics and SEO training courses are facilitated by Erica Stacey (nee Nistico), Top Scout and Digital Marketer at <a href="http://www.scoutdigitalmarketing.com.au" target="_blank">Scout Digital Marketing</a>. </p>
+    <p> Erica has been working in digital for nearly 10 years, and is obsessed with understanding and using data to improve online results. </p>
+    <p> She is passionate about helping webmasters understand how to best manage their own website content, optimising it for visitors <i>and</i> search engines, and interpreting their metrics to improve performance. </p>
+    <p> Google has recognised Erica as a Google Analytics and AdWords certified professional, meaning that she has passed multiple exams that assess her product expertise. </p>
+  </div>
+  <div class="col-6_sm-12-middle">
+    <img src="/images/Erica-adelaide-digital-marketer.jpg" alt="Digital Marketer Adelaide - Erica Stacey (nee Nistico)" class="large-portrait-circle">
+  </div>
+</div>
+
+    </section>
+
+    <section>
+      <h2> Testimonial </h2>
+<div class="relative blockquote">
+  <i class="fa fa-quote-left featured"></i>
   <blockquote>
     <p> Erica provided an in depth consultation to help me improve my SEO. </p>
     <p> Her knowledge and skills exceeded my expectations. </p>
@@ -153,22 +172,47 @@
     <p> Not only that but her advice was so clear and actionable that I started to see results in a few days! </p>
     <p> I cannot recommend Erica highly enough for SEO and digital strategy and services. </p>
   </blockquote>
-  <p> Vanessa Jones, Copywriter + content writer + social media marketer at Jones the Writer </p>
-  <img src="/images/vanessa-jones-testimonial-square.jpg">
-</section>
-
-<!-- possibly include overview video here, embed from YouTube -->
-<section>
-
-</section>
-
-<section>
-  <h2> Location </h2>
-  <p> The half day courses are held in a dedicated computer training room, conveniently located in the Adelaide CBD.</p>
-  <p> It is surrounded by carparking options (undercover car parks or public transport are recommended for the half day training courses, as on-street car parks are limited to 1-2 hours), and cafes and restaurants for pre and post sustenance, though a tea and coffee station, biscuits and some fruit are provided for no extra charge.</p>
-  <div class="maps">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.1934115893423!2d138.59370931536395!3d-34.92668598037722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0cf264e20f7ab%3A0xdd6159c40548b5cf!2sIVC+-+Venue+Hire%2C+PC+Rooms!5e0!3m2!1sid!2sid!4v1486610004077" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <i class="fa fa-quote-right absolute-right featured"></i>
+</div>
+<div class="grid-middle">
+  <div class="col-4_sm-12 grid-center">
+    <img src="/images/vanessa-jones-testimonial-square.jpg" class="small-portrait-circle">
   </div>
+  <div class="col-8_sm-12">
+    <p> <bold>Vanessa Jones</bold> <br>
+    <i>Copywriter + content writer + social media marketer <br>
+    <a href="http://www.jonesthewriter.com/" target="_blank">Jones the Writer</a>.</i> </p>
+  </div>
+</div>
+
+    </section>
+
+    <!-- possibly include overview video here, embed from YouTube -->
+
+    <section>
+      <h2> The training venue </h2>
+<p> All of these half day courses are held in a dedicated computer training room, conveniently located in the Adelaide CBD.</p>
+<p> <bold> The IVC (International Visualisation Centre) </bold> <br>
+  19 Young Street <br>
+  Adelaide, South Australia </p>
+<h4> Car parking </h4>
+<p> The IVC is surrounded by carparking options. Undercover car parks or public transport are recommended for the half day training courses, as on-street car parks are limited to 1-2 hours). </p>
+<h4> Food and drinks (i.e. coffee coffee coffee) </h4>
+<p> A tea and coffee station, water, biscuits and some fruit are provided during the training session. </p>
+<p> The IVC is conveniently surrounded by a number of cafes and restaurants for any other food and drinks, before or after the training session. </p>
+<div class="maps">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.1934115893423!2d138.59370931536395!3d-34.92668598037722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0cf264e20f7ab%3A0xdd6159c40548b5cf!2sIVC+-+Venue+Hire%2C+PC+Rooms!5e0!3m2!1sid!2sid!4v1486610004077" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+    </section>
+
+  </section>
+
+<!-- right hand side column, currently empty -->
+  <section class="col-4_md-12">
+
+  </section>
+
 </section>
 
 
@@ -177,14 +221,14 @@
 <section class="grid">
   <!-- Column 1 -->
   <div class="col-6_sm-6_xs-12">
-    <h4><a href="/about">About</a></h4>
+    <h4 class="relative"><a href="/about">About</a></h4>
     <img class="logo" src="/images/scout-digital-training-logo-horizontal.png" alt="Scout Digital Training Courses">
     <p> Effective digital analytics and search engine optimisation (SEO) courses for savvy business owners, managers, marketers, and anyone else who wants to be prepared to do their best online… </p>
   </div>
 
   <!-- Column 2 -->
   <div class="col-2_sm-6_xs-12">
-    <h4><a href="/courses">Courses</a></h4>
+    <h4 class="relative"><a href="/courses">Courses</a></h4>
     <nav>
       <a href="/#"> Introduction to Google Analytics </a>
       <a href="/#"> Further Google Analytics </a>
@@ -194,7 +238,7 @@
 
   <!-- Column 3 -->
   <div class="col-2_sm-6_xs-12">
-    <h4>Sitemap</h4>
+    <h4 class="relative">Sitemap</h4>
     <nav>
       <a href="/index"> Home </a>
       <a href="/about"> About </a>
@@ -205,7 +249,7 @@
 
   <!-- Column 4 -->
   <div class="col-2_sm-6_xs-12">
-    <h4>Be Social!</h4>
+    <h4 class="relative">Be Social!</h4>
     <nav class="social-nav">
       <!-- add your social links here -->
       <a href="https://www.facebook.com/scoutsocial" target="_blank"> <i class="fa fa-facebook"></i>Facebook </a>
@@ -241,6 +285,9 @@
 
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+<!-- Owl Carousel -->
+<script src="/js/owl.carousel.min.js"></script>
 
 <!-- Snipcart  -->
 <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZDBjZjI3YTktMjVjOS00ZTdjLTlhYmUtOTVmYjI0MzE5NjIzNjM2MTY3ODM2MjkyODIzNDYx"></script>
