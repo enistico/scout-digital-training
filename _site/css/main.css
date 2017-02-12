@@ -278,10 +278,11 @@ blockquote {
 /* Lists */
 ul      {
   list-style: circle disc;
-  list-style-position: inside;
+  list-style-position: outside;
+
 }
 ol      { list-style: decimal inside;}
-ol, ul  { padding-left: 0;
+ol, ul  { padding-left: 20px;
           margin-top: 0; }
 li      { margin-bottom: 0.5rem; }
 
@@ -393,6 +394,10 @@ a:hover {
   /*text-align: left;*/
 }
 
+.text-shadow {
+  text-shadow: 2px 2px 5px grey;
+}
+
 .ribbon a {
   color: white;
 }
@@ -400,16 +405,16 @@ a:hover {
 footer h4:before{
     content: "";
     position: absolute;
-    width: 38px;
+    width: 30px;
     height: 1px;
     bottom: 0;
-    left: 18px;
+    /*left: 18px;*/
     border-bottom: 1px solid #ff9100;
 }
 
 footer h4, footer h4 a {
   color: black;
-  padding: 0.5em;
+  padding: 0.25em;
   text-decoration: none;
 }
 
@@ -435,6 +440,14 @@ footer h4 a:hover {
   bottom: 0;
 }
 
+.width-80 {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.margin-top {
+  margin-top: 5vh;
+}
 
 @media (max-width:800px) {
 .blockquote .absolute-right {
@@ -477,6 +490,13 @@ footer h4 a:hover {
   pointer-events: none;
   width: 100%
 }
+
+/* --- Calendar styling --- */
+
+.fc-day-grid-container, .fc-day-grid {
+  margin: 0;
+}
+
 
 /* --- Page title header --- */
 

@@ -47,6 +47,9 @@
     <link rel="stylesheet" href="/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/css/owl.theme.default.min.css">
 
+    <!-- Full Calendar stylesheet for events calendar -->
+    <link rel="stylesheet" href="/css/fullcalendar.min.css">
+
     <!-- CUSTOM STYLESHEETS - This should always be the last stylesheet in your head -->
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/specific.css">
@@ -133,18 +136,18 @@
 </header>
 
 
-        <section>
-  <h1>Contact</h1>
-  <p>If you have any questions about these courses, or are interested in a one-on-one training session, or in-house session for your team, please complete for form below, including as much information as possible, and we will endeavour to respond within 1-2 business days.</p>
-</section>
+        <section class="no-padding page-title-header grid-middle">
+          <h1 class="col-12"> Contact </h1>
+        </section>
 
-<!-- include contact form here -->
-<section>
-  <form class="grid-center" action="https://formspree.io/tina@instituteofcode.com"
+        <section class="width-80">
+  <p>If you have any questions about these courses, are interested in a one-on-one training session, or in-house session for your team, please complete for form below, including as much information as possible, and we will endeavour to respond within 1-2 business days.</p>
+
+  <form class="grid-center" action="https://formspree.io/erica@scoutdm.com.au"
       method="POST">
       <div class="col-4_sm-12">
         <input type="text" name="name" placeholder="Your Name">
-        <input type="email" name="_replyto" placeholder="Your Name">
+        <input type="email" name="_replyto" placeholder="Your Email">
     </div>
     <div class="col-4_sm-12">
       <textarea placeholder="Your Message"></textarea>
@@ -157,17 +160,20 @@
 
 <!-- include venue map here ?? link back to about for more details ?? insert as an include ?? -->
 <section>
-  <h2>Course venue:</h2>
-  <p>All courses are held at:</p>
-  <p>The IVC (International Visualisation Centre)<br>
-    19 Young Street<br>
-    Adelaide<br>
-    South Australia 5000<br></p>
-  <p>Please note: The specific room that courses are held in may change from session to session. Please check the directory screen in the entrance to The IVC, or ask at reception.</p>
-  <p><a href="/about">More information about the venue here.</a></p>
-  <div class="maps">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.1934115893423!2d138.59370931536395!3d-34.92668598037722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0cf264e20f7ab%3A0xdd6159c40548b5cf!2sIVC+-+Venue+Hire%2C+PC+Rooms!5e0!3m2!1sid!2sid!4v1486610004077" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-  </div>
+  <h2 class="margin-top"> The training venue </h2>
+<p> All of these half day courses are held in a dedicated computer training room, conveniently located in the Adelaide CBD.</p>
+<p> <bold> The IVC (International Visualisation Centre) </bold> <br>
+  19 Young Street <br>
+  Adelaide, South Australia </p>
+<h4> Car parking </h4>
+<p> The IVC is surrounded by carparking options. Undercover car parks or public transport are recommended for the half day training courses, as on-street car parks are limited to 1-2 hours). </p>
+<h4> Food and drinks (i.e. coffee coffee coffee) </h4>
+<p> A tea and coffee station, water, biscuits and some fruit are provided during the training session. </p>
+<p> The IVC is conveniently surrounded by a number of cafes and restaurants for any other food and drinks, before or after the training session. </p>
+<div class="maps">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.1934115893423!2d138.59370931536395!3d-34.92668598037722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0cf264e20f7ab%3A0xdd6159c40548b5cf!2sIVC+-+Venue+Hire%2C+PC+Rooms!5e0!3m2!1sid!2sid!4v1486610004077" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
 </section>
 
 
@@ -178,16 +184,16 @@
   <div class="col-6_sm-6_xs-12">
     <h4 class="relative"><a href="/about">About</a></h4>
     <img class="logo" src="/images/scout-digital-training-logo-horizontal.png" alt="Scout Digital Training Courses">
-    <p> Effective digital analytics and search engine optimisation (SEO) courses for savvy business owners, managers, marketers, and anyone else who wants to be prepared to do their best online… </p>
+    <p> Effective digital analytics and search engine optimisation (SEO) training courses for savvy business owners, managers, marketers, and anyone else who wants to be prepared to do their best online… </p>
   </div>
 
   <!-- Column 2 -->
   <div class="col-2_sm-6_xs-12">
     <h4 class="relative"><a href="/courses">Courses</a></h4>
     <nav>
-      <a href="/#"> Introduction to Google Analytics </a>
-      <a href="/#"> Further Google Analytics </a>
-      <a href="/#"> Introduction to SEO </a>
+      <a href="/google-analytics-intro.html"> Introduction to Google Analytics </a>
+      <a href="/google-analytics-further.html"> Further Google Analytics </a>
+      <a href="/seo-basics.html"> Introduction to SEO </a>
     </nav>
   </div>
 
@@ -218,7 +224,9 @@
 <section class="grid ribbon">
   <!-- replace this with an auto updating year using javascript -->
   <div class="col-10_sm-12">
-    Copyright © 2017 Scout Digital Marketing
+    Copyright © <script type="text/javascript">
+  document.write(new Date().getFullYear());
+</script> Scout Digital Training
   </div>
   <div class="col-2_sm-12">
     <a href="/privacy"> Privacy</a> |
@@ -243,6 +251,10 @@
 
 <!-- Owl Carousel -->
 <script src="/js/owl.carousel.min.js"></script>
+
+<!-- Full Calendar -->
+<script src="/js/moment.min.js"></script>
+<script src="/js/fullcalendar.min.js"></script>
 
 <!-- Snipcart  -->
 <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZDBjZjI3YTktMjVjOS00ZTdjLTlhYmUtOTVmYjI0MzE5NjIzNjM2MTY3ODM2MjkyODIzNDYx"></script>

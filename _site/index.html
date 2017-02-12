@@ -47,6 +47,9 @@
     <link rel="stylesheet" href="/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/css/owl.theme.default.min.css">
 
+    <!-- Full Calendar stylesheet for events calendar -->
+    <link rel="stylesheet" href="/css/fullcalendar.min.css">
+
     <!-- CUSTOM STYLESHEETS - This should always be the last stylesheet in your head -->
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/specific.css">
@@ -136,7 +139,7 @@
           <!-- FIRST BANNER SECTION ---->
   <section id="intro-banner" class="banner featured centered grid-middle">
     <div class="col">
-      <h1> Be prepared <br class="mob-hide"> to do your best online… </h1>
+      <h1 class="text-shadow"> Be prepared <br class="mob-hide"> to do your best online… </h1>
     </div>
   </section>
 
@@ -203,7 +206,7 @@
     </div>
     <div class="grid-middle">
         <div class="col-6_md-12">
-            <a class="button-inverted" href="#register"> Learn More </a>
+            <a class="button-inverted" href="/google-analytics-further.html"> Learn More </a>
         </div>
         <div class="col-6_md-12">
             <a class="button-inverted" href="#register"> Join Now </a>
@@ -232,7 +235,7 @@
     </div>
     <div class="grid-middle">
         <div class="col-6_md-12">
-            <a class="button-inverted" href="#register"> Learn More </a>
+            <a class="button-inverted" href="/seo-basics.html"> Learn More </a>
         </div>
         <div class="col-6_md-12">
             <a class="button-inverted" href="#register"> Join Now </a>
@@ -246,9 +249,9 @@
 
 <!-- THIRD ALL COURSES SECTION ---->
   <section class="featured centered">
-    <h2> Browse all courses </h2>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
-    <a class="button-inverted" href="/courses"> ALL COURSES </a>
+    <h2> Course Calendar </h2>
+    <p> View our course calendar listing all upcoming Google Analytics and Search Engine Optimisation course dates. </p>
+    <a class="button-inverted" href="/course-calendar"> View Course Dates </a>
   </section>
 
 
@@ -304,11 +307,12 @@
   <section class="featured centered">
     <h3> Subscribe for updates </h3>
     <p> Subscribe here for new course dates, updates, and analytics and SEO news and resources. We don't spam. </p>
-    <form class="grid-center" action="https://formspree.io/tina@instituteofcode.com"
+    <form class="grid-center" action="https://formspree.io/erica@scoutdm.com.au"
         method="POST">
         <div class="col-4_sm-12">
           <input type="text" name="name" placeholder="Your Name">
           <input type="email" name="_replyto" placeholder="Your Email">
+          <input type="submit" value="Send" class="button-inverted">
         </div>
     </form>
   </section>
@@ -321,16 +325,16 @@
   <div class="col-6_sm-6_xs-12">
     <h4 class="relative"><a href="/about">About</a></h4>
     <img class="logo" src="/images/scout-digital-training-logo-horizontal.png" alt="Scout Digital Training Courses">
-    <p> Effective digital analytics and search engine optimisation (SEO) courses for savvy business owners, managers, marketers, and anyone else who wants to be prepared to do their best online… </p>
+    <p> Effective digital analytics and search engine optimisation (SEO) training courses for savvy business owners, managers, marketers, and anyone else who wants to be prepared to do their best online… </p>
   </div>
 
   <!-- Column 2 -->
   <div class="col-2_sm-6_xs-12">
     <h4 class="relative"><a href="/courses">Courses</a></h4>
     <nav>
-      <a href="/#"> Introduction to Google Analytics </a>
-      <a href="/#"> Further Google Analytics </a>
-      <a href="/#"> Introduction to SEO </a>
+      <a href="/google-analytics-intro.html"> Introduction to Google Analytics </a>
+      <a href="/google-analytics-further.html"> Further Google Analytics </a>
+      <a href="/seo-basics.html"> Introduction to SEO </a>
     </nav>
   </div>
 
@@ -361,7 +365,9 @@
 <section class="grid ribbon">
   <!-- replace this with an auto updating year using javascript -->
   <div class="col-10_sm-12">
-    Copyright © 2017 Scout Digital Marketing
+    Copyright © <script type="text/javascript">
+  document.write(new Date().getFullYear());
+</script> Scout Digital Training
   </div>
   <div class="col-2_sm-12">
     <a href="/privacy"> Privacy</a> |
@@ -386,6 +392,10 @@
 
 <!-- Owl Carousel -->
 <script src="/js/owl.carousel.min.js"></script>
+
+<!-- Full Calendar -->
+<script src="/js/moment.min.js"></script>
+<script src="/js/fullcalendar.min.js"></script>
 
 <!-- Snipcart  -->
 <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZDBjZjI3YTktMjVjOS00ZTdjLTlhYmUtOTVmYjI0MzE5NjIzNjM2MTY3ODM2MjkyODIzNDYx"></script>
