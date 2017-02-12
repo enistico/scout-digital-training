@@ -168,6 +168,8 @@ footer nav .fa,
 
 .pure-drawer { /* pop-out hamburger menu */
   padding: 5em 3%;
+  border-color: white;
+  color: white;
 }
 
 .mob-nav a {
@@ -358,7 +360,12 @@ form [class*=col-] {
   textarea {
     margin: 0;
   }
-
+  li {
+    text-align: left;
+  }
+  footer .ribbon {
+    height: 15vh;
+  }
 }/* End media query */
 
 /* MY CSS CODE STARTS HERE (ERICA) */
@@ -440,9 +447,26 @@ footer h4 a:hover {
   bottom: 0;
 }
 
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%
+}
+
+.video-proportion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .width-80 {
   max-width: 80%;
   margin: 0 auto;
+}
+
+.width-100 {
+  max-width: 100%;
 }
 
 .margin-top {
