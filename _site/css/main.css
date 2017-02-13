@@ -540,3 +540,26 @@ footer h4 a:hover {
   background-color: #f5f5f5;
   padding: 20px;
 }
+
+/* --- Pure draw overrides --- */
+.pure-toggle-label .pure-toggle-icon,
+.pure-toggle-label .pure-toggle-icon:before,
+.pure-toggle-label .pure-toggle-icon:after {
+  background: white;
+}
+
+.pure-toggle-label:hover .pure-toggle-icon,
+.pure-toggle-label:hover .pure-toggle-icon:before,
+.pure-toggle-label:hover .pure-toggle-icon:after {
+  background: white;
+}
+
+@media (max-width: 678px) {
+  .pure-toggle-label[data-toggle-label='right'] {
+    right: 0;
+  }
+
+  .pure-toggle-label {
+    top: 0;
+  }
+}
