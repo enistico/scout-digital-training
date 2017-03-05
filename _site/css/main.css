@@ -187,7 +187,7 @@ footer nav .fa,
 
 .box-img { /* This can be used for any col or div that you want filled with a background image. */
   background-color: grey; /* this is a fallback incase the image doesn't load */
-  background-image: url('/images/yoga-1.jpg'); /* if you are adding a unique image to every one you can remove this */
+  background-image: url('/images/'); /* if you are adding a unique image to every one you can remove this */
   background-size: cover;
   background-position: center;
   min-height: 20vh;
@@ -443,8 +443,14 @@ footer h4 a:hover {
 
 .absolute-right {
   position: absolute;
-  right: 10px;
+  right: 30px;
   bottom: 0;
+}
+
+.quote-right {
+  position: absolute;
+  right: 10px;
+  bottom: -20px;
 }
 
 .video-container {
@@ -474,9 +480,10 @@ footer h4 a:hover {
 }
 
 @media (max-width:800px) {
-.blockquote .absolute-right {
+.blockquote .quote-right {
   position: relative;
   right: 0px;
+  bottom: 0px;
 }
 }
 
