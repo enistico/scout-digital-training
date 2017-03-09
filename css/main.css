@@ -379,7 +379,7 @@ form [class*=col-] {
 .ribbon {
   background-color: #ff9100;
   width: 100vw;
-  height: 10vh;
+  min-height: 10vh;
   margin: 0;
   padding: 0;
   color: white;
