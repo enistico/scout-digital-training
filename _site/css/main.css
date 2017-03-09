@@ -288,6 +288,10 @@ ol, ul  { padding-left: 20px;
           margin-top: 0; }
 li      { margin-bottom: 0.5rem; }
 
+.indent {
+  padding-left: 25px;
+}
+
 /* ----- FORMS --------------------------- */
 
 input,

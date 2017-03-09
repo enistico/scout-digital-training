@@ -11,32 +11,47 @@ $('#calendar').fullCalendar({
             events: [ // put the array in the `events` property
                 {
                     title  : 'Introduction to Google Analytics',
-                    start  : '2017-03-14',
+                    start  : '2017-04-13',
                     url    : '/google-analytics-intro.html',
                 },
                 {
                     title  : 'Taking Google Analytics Further',
-                    start  : '2017-03-28',
+                    start  : '2017-05-11',
                     url    : '/google-analytics-further.html',
                 },
                 {
                     title  : 'Introduction to SEO Best Practices',
-                    start  : '2017-04-11',
+                    start  : '2017-06-08',
                     url    : '/seo-basics.html',
                 },
                 {
                     title  : 'Introduction to Google Analytics',
-                    start  : '2017-04-25',
+                    start  : '2017-07-06',
                     url    : '/google-analytics-intro.html',
                 },
                 {
                     title  : 'Taking Google Analytics Further',
-                    start  : '2017-05-09',
+                    start  : '2017-08-03',
                     url    : '/google-analytics-further.html',
                 },
                 {
                     title  : 'Introduction to SEO Best Practices',
-                    start  : '2017-05-23',
+                    start  : '2017-08-31',
+                    url    : '/seo-basics.html',
+                },
+                {
+                    title  : 'Introduction to Google Analytics',
+                    start  : '2017-09-28',
+                    url    : '/google-analytics-intro.html',
+                },
+                {
+                    title  : 'Taking Google Analytics Further',
+                    start  : '2017-10-26',
+                    url    : '/google-analytics-further.html',
+                },
+                {
+                    title  : 'Introduction to SEO Best Practices',
+                    start  : '2017-11-23',
                     url    : '/seo-basics.html',
                 }
             ],
