@@ -11,7 +11,7 @@ $('#calendar').fullCalendar({
             events: [ // put the array in the `events` property
                 {
                     title  : 'Introduction to Google Analytics',
-                    start  : '2017-04-13',
+                    start  : '2017-04-20',
                     url    : '/google-analytics-intro.html',
                 },
                 {
