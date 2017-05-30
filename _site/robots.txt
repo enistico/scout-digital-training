@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /cc-connection-test
+Disallow: /update
+Disallow: /login
+Disallow: /logout
+Disallow: /thank-you
+Disallow: /thank-you.html
+Disallow: /type-styles
+Disallow: /type-styles.html
