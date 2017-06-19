@@ -1,4 +1,5 @@
 User-agent: *
+Allow: /
 Disallow: /cc-connection-test
 Disallow: /update
 Disallow: /login
